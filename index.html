@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Поиск треков</title>
+    <title>Аудиобиблиотека</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
@@ -15,8 +15,6 @@
     <audio id="audioPlayer" controls></audio>
 
     <script>
-        const tg = window.Telegram.WebApp;
-
         // Функция для поиска треков
         async function searchTracks() {
             const query = document.getElementById('searchInput').value;

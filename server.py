@@ -4,7 +4,7 @@ from ytmusicapi import YTMusic
 app = Flask(__name__)
 
 # Инициализация ytmusicapi
-ytmusic = YTMusic()
+ytmusic = YTMusic()  # Создайте headers_auth.json через ytmusicapi oauth
 
 # Роут для поиска треков
 @app.route('/api/search', methods=['GET'])
